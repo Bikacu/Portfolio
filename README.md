@@ -1,5 +1,35 @@
-A Junior Research Engineer with experience in Reliability Engineering as well as Instrument and Automation Engineering, and a graduate in Control and Instrumentation Engineering. 
-I possess expertise in Research and Development, Automation, Root Cause Analysis, Critical Thinking, Problem Solving, Troubleshooting, Preventive Action, Data Processing, Data Visualization, Continuous Improvement, Teamwork, and Leadership.
-I actively pursue courses related to Data Analysis outside of work due to my interest in integrating Engineering and Business skills with data analysis. 
-I believe that through data, we can accurately identify problems and develop solutions that enhance performance, product quality, and user experience.
-Furthermore, my experience living in 10 cities across Indonesia and South Korea has enriched my understanding of cultural diversity and various work environments.
+# Bagus Bernadi
+
+**Process Engineer | Data Analysis & Automation | Manufacturing (PLC Splitter)**
+
+📍 Karawang, West Java, Indonesia · [LinkedIn](https://www.linkedin.com/in/bagus-bernadi/)
+
+## About
+
+Process Engineer in Planar Lightwave Circuit (PLC) splitter manufacturing, with a background in Control & Instrumentation Engineering, Reliability, and Automation. I use data to find root causes, reduce defects and rework, and improve yield.
+
+## What I Work On
+
+- Yield, defect, and rework analysis
+- Root cause analysis and continuous improvement
+- Reporting and dashboard automation for production data
+
+## Tech Stack
+
+- **Data:** Python (pandas, matplotlib), Excel [, SQL]
+- **Tools:** Git/GitHub, [Power BI / other]
+
+## Projects
+
+| Project | Description | Tools |
+|---|---|---|
+| [Project name](link) | [One line: problem → result] | Python, Excel |
+| Coming soon | Yield & rework analysis (anonymized data) | Python |
+
+## Learning
+
+- Python for Data Professional (DQLab) — [see notebooks](https://github.com/Bikacu/Python-for-Data-Professional-Beginner-Part-1)
+
+## Contact
+
+[LinkedIn](https://www.linkedin.com/in/bagus-bernadi/) · [email](bagus.bernadi@gmail.com)
