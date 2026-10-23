@@ -32,7 +32,7 @@ Link otomatis: `https://bikacu.github.io/<slug>/` dan `https://github.com/Bikacu
 | No | Project | Repo | Status |
 |---|---|---|---|
 | 01 | Rainfall Pattern Analysis | `rainfall-pattern-analysis` | planned |
-| 02 | Customer Churn Driver Analysis | `telco-churn-driver-analysis` | planned |
+| 02 | Customer Churn Driver Analysis | [`Project-2-Customer-Churn-Analysis`](https://github.com/bagusbernadi/Project-2-Customer-Churn-Analysis) | design |
 | 03 | Yield, Rework & Defect Tracking System | `yield-rework-defect-tracking` | design |
 | 04 | Before–After Defect Reduction (QCC Coating Damage) | `before-after-defect-reduction` | design |
 | 05 | Sensor Time-Series Anomaly Detection | `sensor-anomaly-detection` | planned |

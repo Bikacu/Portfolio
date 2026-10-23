@@ -55,7 +55,7 @@ const STO={done:0,"in-progress":1,design:2,planned:3},LVO={easy:0,medium:1,hard:
 const $=id=>document.getElementById(id);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const gh=PR.github||"";
-const liveURL=p=>p.live||`https://${gh}.github.io/${p.slug}/`,repoURL=p=>`https://github.com/${gh}/${p.slug}`;
+const liveURL=p=>p.live||`https://${gh}.github.io/${p.slug}/`,repoURL=p=>p.repo||`https://github.com/${gh}/${p.slug}`;
 const hasLink=p=>p.status!=="planned";
 
 let lang="en";
