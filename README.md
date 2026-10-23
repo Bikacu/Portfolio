@@ -33,38 +33,38 @@ Link otomatis: `https://bagusbernadi.github.io/<slug>/` dan `https://github.com/
 |---|---|---|---|
 | 01 | Rainfall Pattern Analysis | [`Project-1-Rainfall-Pattern-Analysis`](https://github.com/bagusbernadi/Project-1-Rainfall-Pattern-Analysis) | design |
 | 02 | Customer Churn Driver Analysis | [`Project-2-Customer-Churn-Analysis`](https://github.com/bagusbernadi/Project-2-Customer-Churn-Analysis) | design |
-| 03 | Yield, Rework & Defect Tracking System | `yield-rework-defect-tracking` | design |
-| 04 | Before–After Defect Reduction (QCC Coating Damage) | `before-after-defect-reduction` | design |
-| 05 | Sensor Time-Series Anomaly Detection | `sensor-anomaly-detection` | planned |
-| 06 | Energy Consumption Dashboard | `energy-consumption-dashboard` | planned |
-| 07 | NG Sampling vs Core Test | `ng-sampling-vs-core-test` | planned |
-| 08 | Property Price Analysis | `property-price-analysis` | planned |
-| 09 | Sales & Customer Dashboard | `sales-customer-dashboard` | in-progress |
-| 10 | Cycle Time & Bottleneck Analysis | `cycle-time-bottleneck-analysis` | planned |
-| 11 | A/B Test Analysis | `ab-test-analysis` | planned |
-| 12 | Process Comparison Analysis | `process-comparison-analysis` | planned |
-| 13 | SpaceX Falcon 9 Landing Analysis | `spacex-falcon9-landing-analysis` | planned |
-| 14 | Social Media Performance Analytics | `social-media-performance-analytics` | planned |
-| 15 | SPC Control Chart & Capability Dashboard | `spc-control-chart-dashboard` | planned |
-| 16 | Learning Curve Analysis | `learning-curve-analysis` | planned |
-| 17 | Supplier Quality Scorecard | `supplier-quality-scorecard` | planned |
-| 18 | LLM-based Rework/Defect Note Classifier | `llm-defect-note-classifier` | planned |
-| 19 | Data Quality Audit & Anti-Bypass Template | `data-quality-audit` | planned |
-| 20 | Staking Lens Data Pipeline + Dashboard | `staking-lens-data-pipeline` | planned |
-| 21 | Natural Language to SQL Analytics Assistant | `nl-to-sql-analytics-assistant` | planned |
-| 22 | Cohort & RFM Segmentation | `cohort-rfm-segmentation` | planned |
-| 23 | Telegram Bot Automated KPI Reporting | `telegram-kpi-report-bot` | planned |
-| 24 | Privacy-Preserving Data Sharing Pipeline | `privacy-preserving-data-pipeline` | planned |
-| 25 | Messy Excel Report Parser | `messy-excel-report-parser` | planned |
-| 26 | Spec Compliance Extraction | `spec-compliance-extraction` | planned |
-| 27 | Analytics Engineering Mini-Warehouse | `analytics-mini-warehouse` | planned |
-| 28 | Predictive Maintenance Failure Analysis | `predictive-maintenance-failure-analysis` | planned |
-| 29 | Root Cause Analysis Statistics | `root-cause-analysis-statistics` | planned |
-| 30 | Production Data Entry App + Dashboard | `production-data-entry-app` | planned |
-| 31 | Job Market Scraping & Skill Demand Analysis | `job-market-skill-demand` | planned |
-| 32 | AD Applicability Checker | `ad-applicability-checker` | planned |
-| 33 | Automated ETL: Excel Log → SQL Database | `automated-etl-excel-to-sql` | planned |
-| 34 | Customer Behavioral Segmentation | `customer-behavioral-segmentation` | planned |
+| 03 | Yield, Rework & Defect Tracking System | [`Project-3-Yield-Rework-Defect-Tracking`](https://github.com/bagusbernadi/Project-3-Yield-Rework-Defect-Tracking) | design |
+| 04 | Before–After Defect Reduction (QCC Coating Damage) | [`Project-4-Coating-Damage-Reduction`](https://github.com/bagusbernadi/Project-4-Coating-Damage-Reduction) | design |
+| 05 | Sensor Time-Series Anomaly Detection | [`Project-5-Sensor-Anomaly-Detection`](https://github.com/bagusbernadi/Project-5-Sensor-Anomaly-Detection) | planned |
+| 06 | Energy Consumption Dashboard | [`Project-6-Energy-Consumption-Dashboard`](https://github.com/bagusbernadi/Project-6-Energy-Consumption-Dashboard) | planned |
+| 07 | NG Sampling vs Core Test | [`Project-7-NG-Sampling-vs-Core-Test`](https://github.com/bagusbernadi/Project-7-NG-Sampling-vs-Core-Test) | planned |
+| 08 | Property Price Analysis | [`Project-8-Property-Price-Analysis`](https://github.com/bagusbernadi/Project-8-Property-Price-Analysis) | planned |
+| 09 | Sales & Customer Dashboard | [`Project-9-Sales-Customer-Dashboard`](https://github.com/bagusbernadi/Project-9-Sales-Customer-Dashboard) | in-progress |
+| 10 | Cycle Time & Bottleneck Analysis | [`Project-10-Cycle-Time-Bottleneck-Analysis`](https://github.com/bagusbernadi/Project-10-Cycle-Time-Bottleneck-Analysis) | planned |
+| 11 | A/B Test Analysis | [`Project-11-AB-Test-Analysis`](https://github.com/bagusbernadi/Project-11-AB-Test-Analysis) | planned |
+| 12 | Process Comparison Analysis | [`Project-12-Process-Comparison-Analysis`](https://github.com/bagusbernadi/Project-12-Process-Comparison-Analysis) | planned |
+| 13 | SpaceX Falcon 9 Landing Analysis | [`Project-13-SpaceX-Falcon9-Landing-Analysis`](https://github.com/bagusbernadi/Project-13-SpaceX-Falcon9-Landing-Analysis) | planned |
+| 14 | Social Media Performance Analytics | [`Project-14-Social-Media-Performance-Analytics`](https://github.com/bagusbernadi/Project-14-Social-Media-Performance-Analytics) | planned |
+| 15 | SPC Control Chart & Capability Dashboard | [`Project-15-SPC-Control-Chart-Dashboard`](https://github.com/bagusbernadi/Project-15-SPC-Control-Chart-Dashboard) | planned |
+| 16 | Learning Curve Analysis | [`Project-16-Learning-Curve-Analysis`](https://github.com/bagusbernadi/Project-16-Learning-Curve-Analysis) | planned |
+| 17 | Supplier Quality Scorecard | [`Project-17-Supplier-Quality-Scorecard`](https://github.com/bagusbernadi/Project-17-Supplier-Quality-Scorecard) | planned |
+| 18 | LLM-based Rework/Defect Note Classifier | [`Project-18-LLM-Defect-Note-Classifier`](https://github.com/bagusbernadi/Project-18-LLM-Defect-Note-Classifier) | planned |
+| 19 | Data Quality Audit & Anti-Bypass Template | [`Project-19-Data-Quality-Audit`](https://github.com/bagusbernadi/Project-19-Data-Quality-Audit) | planned |
+| 20 | Staking Lens Data Pipeline + Dashboard | [`Project-20-Staking-Lens-Data-Pipeline`](https://github.com/bagusbernadi/Project-20-Staking-Lens-Data-Pipeline) | planned |
+| 21 | Natural Language to SQL Analytics Assistant | [`Project-21-NL-to-SQL-Analytics-Assistant`](https://github.com/bagusbernadi/Project-21-NL-to-SQL-Analytics-Assistant) | planned |
+| 22 | Cohort & RFM Segmentation | [`Project-22-Cohort-RFM-Segmentation`](https://github.com/bagusbernadi/Project-22-Cohort-RFM-Segmentation) | planned |
+| 23 | Telegram Bot Automated KPI Reporting | [`Project-23-Telegram-KPI-Reporting-Bot`](https://github.com/bagusbernadi/Project-23-Telegram-KPI-Reporting-Bot) | planned |
+| 24 | Privacy-Preserving Data Sharing Pipeline | [`Project-24-Privacy-Preserving-Data-Pipeline`](https://github.com/bagusbernadi/Project-24-Privacy-Preserving-Data-Pipeline) | planned |
+| 25 | Messy Excel Report Parser | [`Project-25-Messy-Excel-Report-Parser`](https://github.com/bagusbernadi/Project-25-Messy-Excel-Report-Parser) | planned |
+| 26 | Spec Compliance Extraction | [`Project-26-Spec-Compliance-Extraction`](https://github.com/bagusbernadi/Project-26-Spec-Compliance-Extraction) | planned |
+| 27 | Analytics Engineering Mini-Warehouse | [`Project-27-Analytics-Engineering-Mini-Warehouse`](https://github.com/bagusbernadi/Project-27-Analytics-Engineering-Mini-Warehouse) | planned |
+| 28 | Predictive Maintenance Failure Analysis | [`Project-28-Predictive-Maintenance-Analysis`](https://github.com/bagusbernadi/Project-28-Predictive-Maintenance-Analysis) | planned |
+| 29 | Root Cause Analysis Statistics | [`Project-29-Root-Cause-Analysis-Statistics`](https://github.com/bagusbernadi/Project-29-Root-Cause-Analysis-Statistics) | planned |
+| 30 | Production Data Entry App + Dashboard | [`Project-30-Production-Data-Entry-App`](https://github.com/bagusbernadi/Project-30-Production-Data-Entry-App) | planned |
+| 31 | Job Market Scraping & Skill Demand Analysis | [`Project-31-Job-Market-Skill-Demand-Analysis`](https://github.com/bagusbernadi/Project-31-Job-Market-Skill-Demand-Analysis) | planned |
+| 32 | AD Applicability Checker | [`Project-32-AD-Applicability-Checker`](https://github.com/bagusbernadi/Project-32-AD-Applicability-Checker) | planned |
+| 33 | Automated ETL: Excel Log → SQL Database | [`Project-33-Automated-Excel-to-SQL-ETL`](https://github.com/bagusbernadi/Project-33-Automated-Excel-to-SQL-ETL) | planned |
+| 34 | Customer Behavioral Segmentation | [`Project-34-Customer-Behavioral-Segmentation`](https://github.com/bagusbernadi/Project-34-Customer-Behavioral-Segmentation) | planned |
 
 
 ### Aktifkan GitHub Pages
