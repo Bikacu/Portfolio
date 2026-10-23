@@ -27,7 +27,12 @@ Edit `data/projects.js`, field `status`: `planned` (tombol "Coming soon") · `de
 
 Link otomatis: `https://bagusbernadi.github.io/<slug>/` dan `https://github.com/bagusbernadi/<slug>`. Jika nama repo berbeda dari slug (pola `Project-N-<Nama>`) atau URL berbeda (misalnya dashboard Streamlit), tambahkan `"live": "https://..."` dan `"repo": "https://github.com/..."`.
 
-### Daftar repo project
+#### Filter & urutan berdasarkan skill
+Skill di kartu project dibaca otomatis dari field `tools` (misalnya "SQL (DuckDB)" → SQL + DuckDB). Daftar skill dan pola pengenalnya ada di konstanta `SK` di `assets/app.js`.
+Jika hasil otomatis kurang tepat, tambahkan `"skills": ["SQL", "DuckDB", "Python"]` pada project tersebut di `data/projects.js`.
+Link bisa dibagikan langsung dengan filter skill, misalnya `https://bagusbernadi.github.io/?skill=SQL,Python`.
+
+## Daftar repo project
 
 | No | Project | Repo | Status |
 |---|---|---|---|
