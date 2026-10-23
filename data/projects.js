@@ -3,7 +3,7 @@
 // 'repo' is optional: override the default URL https://github.com/<github>/<slug>
 window.PROFILE={
  "name": "Bagus Bernadi",
- "github": "Bikacu",
+ "github": "bagusbernadi",
  "linkedin": "https://www.linkedin.com/in/bagus-bernadi/",
  "email": "bagus.bernadi@gmail.com",
  "role": {
