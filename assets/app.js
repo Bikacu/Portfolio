@@ -69,6 +69,12 @@ const SK=[["db","SQL",/\bSQL\b|DuckDB|SQLite|PostgreSQL|BigQuery|dbt/i],["db","D
 P.forEach(p=>{p._sk=Array.isArray(p.skills)?p.skills:SK.filter(([, ,re])=>re.test(p.tools)).map(([,n])=>n)});
 const SKC=n=>P.filter(p=>p._sk.includes(n)).length;
 const SKG=["db","py","bi","eng"];
+// chip colors: one hue per skill group, darker shades alternate inside a group
+const GH={db:"--navyH",py:"--tealH",bi:"--amberH",eng:"--plumH"},SHADE=[0,22,38];
+const SKCOL={};SKG.forEach(g=>SK.filter(s=>s[0]===g).forEach((s,i)=>{SKCOL[s[1]]=`color-mix(in srgb,var(${GH[g]}) ${100-SHADE[i%3]}%,#000)`}));
+const skc=n=>SKCOL[n]||"var(--blue)";
+const STC={done:"var(--tealH)","in-progress":"var(--amberH)",design:"var(--navyH)",planned:"var(--mut)"};
+const CHC={category:v=>`var(${CATH[v]||"--navyH"})`,level:v=>LVC[v],status:v=>STC[v]};
 
 let lang="en";
 try{const u=new URLSearchParams(location.search).get("lang");lang=(u==="id"||u==="en")?u:(localStorage.getItem("lang")||((navigator.language||"").startsWith("id")?"id":"en"))}catch(e){}
@@ -81,7 +87,7 @@ function syncURL(){try{const u=new URL(location.href);S.skills.length?u.searchPa
 const t=k=>T[lang][k]??T.en[k]??k;
 
 function chips(el,key,vals,labelFn){
- el.innerHTML=[["*",t("f.all"),P.length]].concat(vals.map(v=>[v,labelFn(v),P.filter(p=>p[key]===v).length])).map(([v,l,n])=>`<button type="button" class="chipb" data-v="${v}" aria-pressed="${S[key]===v}">${esc(l)}<i>${n}</i></button>`).join("");
+ el.innerHTML=[["*",t("f.all"),P.length]].concat(vals.map(v=>[v,labelFn(v),P.filter(p=>p[key]===v).length])).map(([v,l,n])=>`<button type="button" class="chipb" data-v="${v}" style="--c:${v==="*"?"var(--blue)":CHC[key](v)}" aria-pressed="${S[key]===v}">${esc(l)}<i>${n}</i></button>`).join("");
  el.onclick=e=>{const b=e.target.closest(".chipb");if(!b)return;S[key]=b.dataset.v;render()};
 }
 function uniq(k,order){const s=[...new Set(P.map(p=>p[k]))];return order?s.sort((a,b)=>order[a]-order[b]):s.sort((a,b)=>P.filter(p=>p[k]===b).length-P.filter(p=>p[k]===a).length)}
@@ -98,7 +104,7 @@ function render(){
   .map(([v,k,h])=>`<div class="stat" style="--h:var(${h})"><b>${v}</b><span>${t(k)}</span></div>`).join("");
  $("legend").innerHTML=["done","in-progress","design","planned"].map(s=>`<span><span class="badge st-${s}">${t("status."+s)}</span>${t("lg."+s)}</span>`).join("");
  $("fSkill").innerHTML=`<div class="sh"><b>${t("f.skill")}</b><span>${t("f.skillh")}</span>${S.skills.length?`<button type="button" class="clr">${t("f.clear")}</button>`:""}</div>`+
-  SKG.map(g=>`<div class="row"><span class="gl">${t("g."+g)}</span>${SK.filter(s=>s[0]===g&&SKC(s[1])).map(s=>`<button type="button" class="chipb sk" data-sk="${esc(s[1])}" aria-pressed="${S.skills.includes(s[1])}">${esc(s[1])}<i>${SKC(s[1])}</i></button>`).join("")}</div>`).join("");
+  SKG.map(g=>`<div class="row"><span class="gl">${t("g."+g)}</span>${SK.filter(s=>s[0]===g&&SKC(s[1])).map(s=>`<button type="button" class="chipb sk" data-sk="${esc(s[1])}" style="--c:${skc(s[1])}" aria-pressed="${S.skills.includes(s[1])}">${esc(s[1])}<i>${SKC(s[1])}</i></button>`).join("")}</div>`).join("");
  chips($("fCat"),"category",uniq("category"),v=>t("cat."+v));
  chips($("fLevel"),"level",uniq("level",LVO),v=>t("level."+v));
  chips($("fStatus"),"status",uniq("status",STO),v=>t("status."+v));
@@ -112,7 +118,7 @@ function render(){
   <div class="hd"><span class="no">#${String(p.no).padStart(2,"0")}</span><span class="cat">${esc(t("cat."+p.category))}</span></div>
   <h3>${esc(p.title)}</h3>
   <p class="qq">${esc(p.question[lang]||p.question.en)}</p>
-  <div class="tools" title="${esc(p.tools)}">${p._sk.map(s=>`<button type="button" data-sk="${esc(s)}" class="${S.skills.includes(s)?"on":""}" aria-pressed="${S.skills.includes(s)}">${esc(s)}</button>`).join("")}</div>
+  <div class="tools" title="${esc(p.tools)}">${p._sk.map(s=>`<button type="button" data-sk="${esc(s)}" style="--c:${skc(s)}" class="${S.skills.includes(s)?"on":""}" aria-pressed="${S.skills.includes(s)}">${esc(s)}</button>`).join("")}</div>
   ${S.skills.length?`<span class="mt">${T[lang]["f.match"](hit(p),S.skills.length)}</span>`:""}
   <div class="meta"><span class="badge st-${p.status}">${t("status."+p.status)}</span><span class="lv" style="--lvc:${LVC[p.level]}">${t("level."+p.level)}</span></div>
   <div class="links">${hasLink(p)?`<a class="live" href="${liveURL(p)}" target="_blank" rel="noopener">${t("btn.live")}</a><a class="code" href="${repoURL(p)}" target="_blank" rel="noopener">${t("btn.code")}</a>`:`<span>${t("btn.soon")}</span>`}</div>
