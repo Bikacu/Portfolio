@@ -29,7 +29,7 @@ Link otomatis: `https://bagusbernadi.github.io/<slug>/` dan `https://github.com/
 
 #### Filter & urutan berdasarkan skill
 Skill di kartu project dibaca otomatis dari field `tools` (misalnya "SQL (DuckDB)" → SQL + DuckDB). Daftar skill dan pola pengenalnya ada di konstanta `SK` di `assets/app.js`.
-Jika hasil otomatis kurang tepat, tambahkan `"skills": ["SQL", "DuckDB", "Python"]` pada project tersebut di `data/projects.js`.
+Setiap project sekarang punya field `skills` eksplisit (dipakai lebih dulu daripada pembacaan otomatis). Jika ingin mengubah, tambahkan `"skills": ["SQL", "DuckDB", "Python"]` pada project tersebut di `data/projects.js`.
 Link bisa dibagikan langsung dengan filter skill, misalnya `https://bagusbernadi.github.io/?skill=SQL,Python`.
 
 ## Daftar repo project
@@ -74,3 +74,6 @@ Link bisa dibagikan langsung dengan filter skill, misalnya `https://bagusbernadi
 
 ### Aktifkan GitHub Pages
 Settings → Pages → Source: *Deploy from a branch* → `main` / `(root)` → Save.
+
+### Sumber data
+Field `data` di `data/projects.js`: `type` (`public` / `sim` / `own` / `tbd`), deskripsi `en` dan `id`, serta `url` untuk dataset publik. Tampil di setiap kartu project.

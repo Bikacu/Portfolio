@@ -16,7 +16,7 @@ en:{"nav.projects":"Projects","nav.about":"About","nav.skills":"Skills","nav.con
 "lg.planned":"not started yet","lg.design":"project design published","lg.in-progress":"being built","lg.done":"finished, with live results",
 "level.easy":"Easy","level.medium":"Medium","level.hard":"Hard",
 "cat.manufacturing":"Manufacturing","cat.retail":"E-commerce & Retail","cat.tech":"Tech & Energy","cat.weather":"Weather & Environment","cat.property":"Property & Economy","cat.media":"Media & Social","cat.career":"Job Market & Career","cat.aviation":"Aviation & Compliance",
-"btn.live":"View project","btn.code":"Code","btn.soon":"Coming soon",
+"btn.live":"View project","data.l":"Data","dt.public":"Public","dt.sim":"Simulated","dt.own":"Own collection","dt.tbd":"To be selected","btn.code":"Code","btn.soon":"Coming soon",
 "about.title":"About",
 "about.p1":"I work on the production line of fiber-optic PLC Splitters: monitoring output, yield, rework, and defects, training new operators, and building small tools in Excel and Python to make reporting faster and more reliable.",
 "about.p2":"These projects show how I approach data: define the business question first, clean and validate the data, use SQL and statistics only where they answer the question, and finish with a clear recommendation and an estimated impact.",
@@ -42,7 +42,7 @@ id:{"nav.projects":"Project","nav.about":"Tentang","nav.skills":"Keahlian","nav.
 "lg.planned":"belum dimulai","lg.design":"rancangan project sudah terbit","lg.in-progress":"sedang dibangun","lg.done":"selesai, hasil bisa dibuka",
 "level.easy":"Mudah","level.medium":"Sedang","level.hard":"Sulit",
 "cat.manufacturing":"Manufaktur","cat.retail":"E-commerce & Retail","cat.tech":"Teknologi & Energi","cat.weather":"Cuaca & Lingkungan","cat.property":"Properti & Ekonomi","cat.media":"Media & Sosial","cat.career":"Pasar Kerja & Karier","cat.aviation":"Penerbangan & Compliance",
-"btn.live":"Buka project","btn.code":"Kode","btn.soon":"Segera hadir",
+"btn.live":"Buka project","data.l":"Data","dt.public":"Publik","dt.sim":"Simulasi","dt.own":"Kumpulan sendiri","dt.tbd":"Belum dipilih","btn.code":"Kode","btn.soon":"Segera hadir",
 "about.title":"Tentang",
 "about.p1":"Saya bekerja di lini produksi PLC Splitter fiber optik: memantau output, yield, rework, dan defect, melatih operator baru, serta membuat alat bantu di Excel dan Python agar pelaporan lebih cepat dan andal.",
 "about.p2":"Project-project ini menunjukkan cara saya mengolah data: menetapkan pertanyaan bisnis lebih dulu, membersihkan dan memvalidasi data, memakai SQL dan statistik hanya jika menjawab pertanyaan, lalu menutup dengan rekomendasi yang jelas dan estimasi dampak.",
@@ -110,7 +110,7 @@ function render(){
  chips($("fStatus"),"status",uniq("status",STO),v=>t("status."+v));
  const q=S.q.trim().toLowerCase();
  let L=P.filter(p=>(S.category==="*"||p.category===S.category)&&(S.level==="*"||p.level===S.level)&&(S.status==="*"||p.status===S.status)&&(!S.skills.length||hit(p)>0)&&
-  (!q||[p.title,p.tools,p.question.en,p.question.id,t("cat."+p.category),"#"+p.no].join(" ").toLowerCase().includes(q)));
+  (!q||[p.title,p.tools,p.question.en,p.question.id,p.data?p.data.en+' '+p.data.id:'',t("cat."+p.category),"#"+p.no].join(" ").toLowerCase().includes(q)));
  L.sort((a,b)=>S.sort==="skill"?hit(b)-hit(a)||a.no-b.no:S.sort==="status"?STO[a.status]-STO[b.status]||a.no-b.no:S.sort==="level"?LVO[a.level]-LVO[b.level]||a.no-b.no:a.no-b.no);
  $("count").textContent=T[lang].count(L.length,P.length);
  $("empty").hidden=L.length>0;
@@ -119,6 +119,7 @@ function render(){
   <h3>${esc(p.title)}</h3>
   <p class="qq">${esc(p.question[lang]||p.question.en)}</p>
   <div class="tools" title="${esc(p.tools)}">${p._sk.map(s=>`<button type="button" data-sk="${esc(s)}" style="--c:${skc(s)}" class="${S.skills.includes(s)?"on":""}" aria-pressed="${S.skills.includes(s)}">${esc(s)}</button>`).join("")}</div>
+  ${p.data?`<p class="ds"><span class="dt dt-${p.data.type}">${t("dt."+p.data.type)}</span>${p.data.url?`<a href="${esc(p.data.url)}" target="_blank" rel="noopener">${esc(p.data[lang]||p.data.en)}</a>`:esc(p.data[lang]||p.data.en)}</p>`:""}
   ${S.skills.length?`<span class="mt">${T[lang]["f.match"](hit(p),S.skills.length)}</span>`:""}
   <div class="meta"><span class="badge st-${p.status}">${t("status."+p.status)}</span><span class="lv" style="--lvc:${LVC[p.level]}">${t("level."+p.level)}</span></div>
   <div class="links">${hasLink(p)?`<a class="live" href="${liveURL(p)}" target="_blank" rel="noopener">${t("btn.live")}</a><a class="code" href="${repoURL(p)}" target="_blank" rel="noopener">${t("btn.code")}</a>`:`<span>${t("btn.soon")}</span>`}</div>
