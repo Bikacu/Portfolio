@@ -1,6 +1,6 @@
 # Bagus Bernadi · Data Analyst Portfolio
 
-**Process Engineer → Data Analyst | Manufacturing (PLC Splitter) · SQL · Python · Statistics · Dashboards**
+**Process Engineer → Data Analyst | Manufacturing · SQL · Python · Statistics · Dashboards**
 
 📍 Karawang, West Java, Indonesia · [LinkedIn](https://www.linkedin.com/in/bagus-bernadi/) · [Email](mailto:bagus.bernadi@gmail.com)
 
@@ -42,7 +42,7 @@ Link bisa dibagikan langsung dengan filter skill, misalnya `https://bagusbernadi
 | 04 | Before–After Defect Reduction (QCC Coating Damage) | [`Project-4-Coating-Damage-Reduction`](https://github.com/bagusbernadi/Project-4-Coating-Damage-Reduction) | design |
 | 05 | Sensor Time-Series Anomaly Detection | [`Project-5-Sensor-Anomaly-Detection`](https://github.com/bagusbernadi/Project-5-Sensor-Anomaly-Detection) | planned |
 | 06 | Energy Consumption Dashboard | [`Project-6-Energy-Consumption-Dashboard`](https://github.com/bagusbernadi/Project-6-Energy-Consumption-Dashboard) | planned |
-| 07 | NG Sampling vs Core Test | [`Project-7-NG-Sampling-vs-Core-Test`](https://github.com/bagusbernadi/Project-7-NG-Sampling-vs-Core-Test) | planned |
+| 07 | NG Sampling vs ICT | [`Project-7-NG-Sampling-vs-ICT`](https://github.com/bagusbernadi/Project-7-NG-Sampling-vs-ICT) | planned |
 | 08 | Property Price Analysis | [`Project-8-Property-Price-Analysis`](https://github.com/bagusbernadi/Project-8-Property-Price-Analysis) | planned |
 | 09 | Sales & Customer Dashboard | [`Project-9-Sales-Customer-Dashboard`](https://github.com/bagusbernadi/Project-9-Sales-Customer-Dashboard) | in-progress |
 | 10 | Cycle Time & Bottleneck Analysis | [`Project-10-Cycle-Time-Bottleneck-Analysis`](https://github.com/bagusbernadi/Project-10-Cycle-Time-Bottleneck-Analysis) | planned |
@@ -55,7 +55,7 @@ Link bisa dibagikan langsung dengan filter skill, misalnya `https://bagusbernadi
 | 17 | Supplier Quality Scorecard | [`Project-17-Supplier-Quality-Scorecard`](https://github.com/bagusbernadi/Project-17-Supplier-Quality-Scorecard) | planned |
 | 18 | LLM-based Rework/Defect Note Classifier | [`Project-18-LLM-Defect-Note-Classifier`](https://github.com/bagusbernadi/Project-18-LLM-Defect-Note-Classifier) | planned |
 | 19 | Data Quality Audit & Anti-Bypass Template | [`Project-19-Data-Quality-Audit`](https://github.com/bagusbernadi/Project-19-Data-Quality-Audit) | planned |
-| 20 | Staking Lens Data Pipeline + Dashboard | [`Project-20-Staking-Lens-Data-Pipeline`](https://github.com/bagusbernadi/Project-20-Staking-Lens-Data-Pipeline) | planned |
+| 20 | Push Test Data Pipeline + Dashboard | [`Project-20-Push-Test-Data-Pipeline`](https://github.com/bagusbernadi/Project-20-Push-Test-Data-Pipeline) | planned |
 | 21 | Natural Language to SQL Analytics Assistant | [`Project-21-NL-to-SQL-Analytics-Assistant`](https://github.com/bagusbernadi/Project-21-NL-to-SQL-Analytics-Assistant) | planned |
 | 22 | Cohort & RFM Segmentation | [`Project-22-Cohort-RFM-Segmentation`](https://github.com/bagusbernadi/Project-22-Cohort-RFM-Segmentation) | planned |
 | 23 | Telegram Bot Automated KPI Reporting | [`Project-23-Telegram-KPI-Reporting-Bot`](https://github.com/bagusbernadi/Project-23-Telegram-KPI-Reporting-Bot) | planned |
