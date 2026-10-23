@@ -63,7 +63,7 @@ const liveURL=p=>p.live||`https://${gh}.github.io/${p.slug}/`,repoURL=p=>p.repo|
 const hasLink=p=>p.status!=="planned";
 // Skill taxonomy: derived from the free-text "tools" field. A project may also set "skills": [...] to override.
 const SK=[["db","SQL",/\bSQL\b|DuckDB|SQLite|PostgreSQL|BigQuery|dbt/i],["db","DuckDB",/DuckDB/i],["db","SQLite",/SQLite/i],["db","PostgreSQL",/PostgreSQL/i],["db","BigQuery",/BigQuery/i],["db","dbt",/\bdbt/i],
-["py","Python",/Python/i],["py","pandas",/pandas/i],["py","Polars",/Polars/i],["py","SciPy",/SciPy/i],["py","statsmodels",/statsmodels/i],["py","scikit-learn",/scikit-learn/i],["py","Plotly",/plotly/i],["py","matplotlib",/matplotlib/i],["py","Jupyter",/Jupyter/i],["py","pytest",/pytest/i],
+["py","Python",/Python/i],["py","pandas",/pandas/i],["py","NumPy",/NumPy/i],["py","Polars",/Polars/i],["py","SciPy",/SciPy/i],["py","statsmodels",/statsmodels/i],["py","scikit-learn",/scikit-learn/i],["py","Plotly",/plotly/i],["py","matplotlib",/matplotlib/i],["py","Jupyter",/Jupyter/i],["py","pytest",/pytest/i],
 ["bi","Streamlit",/Streamlit/i],["bi","Power BI",/Power BI/i],["bi","Looker Studio",/Looker/i],["bi","Excel",/Excel/i],["bi","Power Query",/Power Query/i],["bi","HTML dashboard",/dashboard HTML|HTML dashboard/i],
 ["eng","GitHub Actions",/GitHub Actions/i],["eng","Docker",/Docker/i],["eng","LLM",/LLM|Claude|Gemini|LangChain|LangGraph/i],["eng","NLP",/NLP|sentiment/i],["eng","Web scraping",/Playwright|requests|scraping/i]];
 P.forEach(p=>{p._sk=Array.isArray(p.skills)?p.skills:SK.filter(([, ,re])=>re.test(p.tools)).map(([,n])=>n)});
