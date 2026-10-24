@@ -59,7 +59,7 @@ Link bisa dibagikan langsung dengan filter skill, misalnya `https://bagusbernadi
 | 21 | Natural Language to SQL Analytics Assistant | [`Project-21-NL-to-SQL-Analytics-Assistant`](https://github.com/bagusbernadi/Project-21-NL-to-SQL-Analytics-Assistant) | design |
 | 22 | Cohort & RFM Segmentation | [`Project-22-Cohort-RFM-Segmentation`](https://github.com/bagusbernadi/Project-22-Cohort-RFM-Segmentation) | design |
 | 23 | Telegram Bot Automated KPI Reporting | [`Project-23-Telegram-KPI-Reporting-Bot`](https://github.com/bagusbernadi/Project-23-Telegram-KPI-Reporting-Bot) | design |
-| 24 | Privacy-Preserving Data Sharing Pipeline | [`Project-24-Privacy-Preserving-Data-Pipeline`](https://github.com/bagusbernadi/Project-24-Privacy-Preserving-Data-Pipeline) | planned |
+| 24 | Privacy-Preserving Data Sharing Pipeline | [`Project-24-Privacy-Preserving-Data-Pipeline`](https://github.com/bagusbernadi/Project-24-Privacy-Preserving-Data-Pipeline) | design |
 | 25 | Messy Excel Report Parser | [`Project-25-Messy-Excel-Report-Parser`](https://github.com/bagusbernadi/Project-25-Messy-Excel-Report-Parser) | design |
 | 26 | Spec Compliance Extraction | [`Project-26-Spec-Compliance-Extraction`](https://github.com/bagusbernadi/Project-26-Spec-Compliance-Extraction) | design |
 | 27 | Analytics Engineering Mini-Warehouse | [`Project-27-Analytics-Engineering-Mini-Warehouse`](https://github.com/bagusbernadi/Project-27-Analytics-Engineering-Mini-Warehouse) | design |
