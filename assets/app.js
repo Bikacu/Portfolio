@@ -8,13 +8,13 @@ en:{"nav.projects":"Projects","nav.about":"About","nav.skills":"Skills","nav.con
 "st.total":"projects","st.mfg":"manufacturing projects","st.ready":"published","st.prog":"in progress or designed",
 "proj.title":"Projects","proj.sub":"Every project has its own repository and GitHub Pages site. Each one starts from a business question, then shows the data, analysis, and recommendation.",
 "f.search":"Search","f.ph":"Search title, tool, or question","f.all":"All","f.empty":"No project matches the filter.",
-"s.no":"Order: project number","s.status":"Order: most complete first","s.level":"Order: easiest first","s.skill":"Order: most matching skills",
+"s.no":"Order: project number","s.status":"Order: most complete first","s.skill":"Order: most matching skills",
 "f.skill":"Filter by skill","f.skillh":"pick one or more; projects using more of them come first","f.clear":"Clear skills","f.match":(a,b)=>`${a} of ${b} skills`,
 "g.db":"Database & SQL","g.py":"Python","g.bi":"BI & dashboard","g.eng":"Engineering & AI",
 "count":(n,t)=>`Showing ${n} of ${t} projects`,
 "status.planned":"Planned","status.design":"Design ready","status.in-progress":"In progress","status.done":"Published",
 "lg.planned":"not started yet","lg.design":"project design published","lg.in-progress":"being built","lg.done":"finished, with live results",
-"level.easy":"Easy","level.medium":"Medium","level.hard":"Hard",
+
 "cat.manufacturing":"Manufacturing","cat.retail":"E-commerce & Retail","cat.tech":"Tech & Energy","cat.weather":"Weather & Environment","cat.property":"Property & Economy","cat.media":"Media & Social","cat.career":"Job Market & Career","cat.aviation":"Aviation & Compliance",
 "btn.live":"View project","data.l":"Data","dt.public":"Public","dt.sim":"Simulated","dt.own":"Own collection","dt.tbd":"To be selected","btn.code":"Code","btn.soon":"Coming soon",
 "about.title":"About",
@@ -34,13 +34,13 @@ id:{"nav.projects":"Project","nav.about":"Tentang","nav.skills":"Keahlian","nav.
 "st.total":"project","st.mfg":"project manufaktur","st.ready":"sudah terbit","st.prog":"sedang dikerjakan atau sudah dirancang",
 "proj.title":"Project","proj.sub":"Setiap project punya repository dan situs GitHub Pages sendiri. Semua dimulai dari pertanyaan bisnis, lalu menampilkan data, analisis, dan rekomendasi.",
 "f.search":"Cari","f.ph":"Cari judul, tools, atau pertanyaan","f.all":"Semua","f.empty":"Tidak ada project yang cocok dengan filter.",
-"s.no":"Urutan: nomor project","s.status":"Urutan: paling lengkap dulu","s.level":"Urutan: termudah dulu","s.skill":"Urutan: skill paling cocok",
+"s.no":"Urutan: nomor project","s.status":"Urutan: paling lengkap dulu","s.skill":"Urutan: skill paling cocok",
 "f.skill":"Filter berdasarkan skill","f.skillh":"pilih satu atau lebih; project yang memakai lebih banyak skill tampil lebih dulu","f.clear":"Hapus pilihan skill","f.match":(a,b)=>`${a} dari ${b} skill`,
 "g.db":"Database & SQL","g.py":"Python","g.bi":"BI & dashboard","g.eng":"Engineering & AI",
 "count":(n,t)=>`Menampilkan ${n} dari ${t} project`,
 "status.planned":"Direncanakan","status.design":"Rancangan siap","status.in-progress":"Dikerjakan","status.done":"Terbit",
 "lg.planned":"belum dimulai","lg.design":"rancangan project sudah terbit","lg.in-progress":"sedang dibangun","lg.done":"selesai, hasil bisa dibuka",
-"level.easy":"Mudah","level.medium":"Sedang","level.hard":"Sulit",
+
 "cat.manufacturing":"Manufaktur","cat.retail":"E-commerce & Retail","cat.tech":"Teknologi & Energi","cat.weather":"Cuaca & Lingkungan","cat.property":"Properti & Ekonomi","cat.media":"Media & Sosial","cat.career":"Pasar Kerja & Karier","cat.aviation":"Penerbangan & Compliance",
 "btn.live":"Buka project","data.l":"Data","dt.public":"Publik","dt.sim":"Simulasi","dt.own":"Kumpulan sendiri","dt.tbd":"Belum dipilih","btn.code":"Kode","btn.soon":"Segera hadir",
 "about.title":"Tentang",
@@ -54,8 +54,7 @@ id:{"nav.projects":"Project","nav.about":"Tentang","nav.skills":"Keahlian","nav.
 "contact.title":"Kontak","contact.sub":"Terbuka untuk posisi Data Analyst di Indonesia maupun luar negeri.",
 "foot":"Dibuat dengan HTML, CSS, dan JavaScript murni. Di-hosting di GitHub Pages."}};
 const CATH={manufacturing:"--navyH",retail:"--roseH",tech:"--plumH",weather:"--tealH",property:"--amberH",media:"--roseH",career:"--skyH",aviation:"--plumH"};
-const LVC={easy:"var(--green)",medium:"var(--amberH)",hard:"var(--roseH)"};
-const STO={done:0,"in-progress":1,design:2,planned:3},LVO={easy:0,medium:1,hard:2};
+const STO={done:0,"in-progress":1,design:2,planned:3};
 const $=id=>document.getElementById(id);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const gh=PR.github||"";
@@ -74,11 +73,11 @@ const GH={db:"--navyH",py:"--tealH",bi:"--amberH",eng:"--plumH"},SHADE=[0,22,38]
 const SKCOL={};SKG.forEach(g=>SK.filter(s=>s[0]===g).forEach((s,i)=>{SKCOL[s[1]]=`color-mix(in srgb,var(${GH[g]}) ${100-SHADE[i%3]}%,#000)`}));
 const skc=n=>SKCOL[n]||"var(--blue)";
 const STC={done:"var(--tealH)","in-progress":"var(--amberH)",design:"var(--navyH)",planned:"var(--mut)"};
-const CHC={category:v=>`var(${CATH[v]||"--navyH"})`,level:v=>LVC[v],status:v=>STC[v]};
+const CHC={category:v=>`var(${CATH[v]||"--navyH"})`,status:v=>STC[v]};
 
 let lang="en";
 try{const u=new URLSearchParams(location.search).get("lang");lang=(u==="id"||u==="en")?u:(localStorage.getItem("lang")||((navigator.language||"").startsWith("id")?"id":"en"))}catch(e){}
-const S={q:"",category:"*",level:"*",status:"*",sort:"no",skills:[]};
+const S={q:"",category:"*",status:"*",sort:"no",skills:[]};
 try{const u=new URLSearchParams(location.search).get("skill");if(u){S.skills=u.split(",").map(x=>x.trim()).filter(x=>SK.some(s=>s[1].toLowerCase()===x.toLowerCase())).map(x=>SK.find(s=>s[1].toLowerCase()===x.toLowerCase())[1]);if(S.skills.length)S.sort="skill"}}catch(e){}
 const hit=p=>S.skills.filter(s=>p._sk.includes(s)).length;
 function toggleSkill(n){const i=S.skills.indexOf(n);i<0?S.skills.push(n):S.skills.splice(i,1);if(S.skills.length&&S.sort==="no")S.sort="skill";if(!S.skills.length&&S.sort==="skill")S.sort="no";
@@ -106,12 +105,11 @@ function render(){
  $("fSkill").innerHTML=`<div class="sh"><b>${t("f.skill")}</b><span>${t("f.skillh")}</span>${S.skills.length?`<button type="button" class="clr">${t("f.clear")}</button>`:""}</div>`+
   SKG.map(g=>`<div class="row"><span class="gl">${t("g."+g)}</span>${SK.filter(s=>s[0]===g&&SKC(s[1])).map(s=>`<button type="button" class="chipb sk" data-sk="${esc(s[1])}" style="--c:${skc(s[1])}" aria-pressed="${S.skills.includes(s[1])}">${esc(s[1])}<i>${SKC(s[1])}</i></button>`).join("")}</div>`).join("");
  chips($("fCat"),"category",uniq("category"),v=>t("cat."+v));
- chips($("fLevel"),"level",uniq("level",LVO),v=>t("level."+v));
  chips($("fStatus"),"status",uniq("status",STO),v=>t("status."+v));
  const q=S.q.trim().toLowerCase();
- let L=P.filter(p=>(S.category==="*"||p.category===S.category)&&(S.level==="*"||p.level===S.level)&&(S.status==="*"||p.status===S.status)&&(!S.skills.length||hit(p)>0)&&
+ let L=P.filter(p=>(S.category==="*"||p.category===S.category)&&(S.status==="*"||p.status===S.status)&&(!S.skills.length||hit(p)>0)&&
   (!q||[p.title,p.tools,p.question.en,p.question.id,p.data?p.data.en+' '+p.data.id:'',t("cat."+p.category),"#"+p.no].join(" ").toLowerCase().includes(q)));
- L.sort((a,b)=>S.sort==="skill"?hit(b)-hit(a)||a.no-b.no:S.sort==="status"?STO[a.status]-STO[b.status]||a.no-b.no:S.sort==="level"?LVO[a.level]-LVO[b.level]||a.no-b.no:a.no-b.no);
+ L.sort((a,b)=>S.sort==="skill"?hit(b)-hit(a)||a.no-b.no:S.sort==="status"?STO[a.status]-STO[b.status]||a.no-b.no:a.no-b.no);
  $("count").textContent=T[lang].count(L.length,P.length);
  $("empty").hidden=L.length>0;
  $("grid").innerHTML=L.map(p=>`<article class="pc" style="--h:var(${CATH[p.category]||"--navyH"})" id="p${p.no}">
@@ -121,7 +119,7 @@ function render(){
   <div class="tools" title="${esc(p.tools)}">${p._sk.map(s=>`<button type="button" data-sk="${esc(s)}" style="--c:${skc(s)}" class="${S.skills.includes(s)?"on":""}" aria-pressed="${S.skills.includes(s)}">${esc(s)}</button>`).join("")}</div>
   ${p.data?`<p class="ds"><span class="dt dt-${p.data.type}">${t("dt."+p.data.type)}</span>${p.data.url?`<a href="${esc(p.data.url)}" target="_blank" rel="noopener">${esc(p.data[lang]||p.data.en)}</a>`:esc(p.data[lang]||p.data.en)}</p>`:""}
   ${S.skills.length?`<span class="mt">${T[lang]["f.match"](hit(p),S.skills.length)}</span>`:""}
-  <div class="meta"><span class="badge st-${p.status}">${t("status."+p.status)}</span><span class="lv" style="--lvc:${LVC[p.level]}">${t("level."+p.level)}</span></div>
+  <div class="meta"><span class="badge st-${p.status}">${t("status."+p.status)}</span></div>
   <div class="links">${hasLink(p)?`<a class="live" href="${liveURL(p)}" target="_blank" rel="noopener">${t("btn.live")}</a><a class="code" href="${repoURL(p)}" target="_blank" rel="noopener">${t("btn.code")}</a>`:`<span>${t("btn.soon")}</span>`}</div>
  </article>`).join("");
  $("skillGrid").innerHTML=t("sk").map(([h,d])=>`<div class="card"><h3>${esc(h)}</h3><p>${esc(d)}</p></div>`).join("");

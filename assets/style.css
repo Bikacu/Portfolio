@@ -97,8 +97,6 @@ select{font:inherit;font-size:14px;font-weight:600;padding:6px 10px;border-radiu
 .st-in-progress{background:#FEF7E0;color:#3C2A00;border-color:#FDD663}
 .st-design{background:var(--soft);color:var(--head);border-color:#AECBFA}
 .st-planned{background:var(--sub);color:var(--mut);border-color:var(--line)}
-.lv{font-size:12.5px;font-weight:700;border-radius:999px;padding:1px 10px;background:color-mix(in srgb,var(--lvc) 11%,var(--card));border:1px solid color-mix(in srgb,var(--lvc) 32%,var(--card));color:color-mix(in srgb,var(--lvc) 82%,#000)}
-.lv::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;vertical-align:1px;background:var(--lvc,var(--green))}
 .links{display:flex;gap:8px;margin-top:4px}
 .links a,.links span{font-size:14px;font-weight:700;text-decoration:none;border-radius:999px;padding:5px 14px;border:1px solid var(--line)}
 .links a.live{background:var(--blue);border-color:var(--blue);color:#fff}
