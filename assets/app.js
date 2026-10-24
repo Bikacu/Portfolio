@@ -60,7 +60,7 @@ const $=id=>document.getElementById(id);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const gh=PR.github||"";
 const liveURL=p=>p.live||`https://${gh}.github.io/${p.slug}/`,repoURL=p=>p.repo||`https://github.com/${gh}/${p.slug}`;
-const hasLink=p=>p.status!=="planned";
+const hasLink=p=>true;
 // Skill taxonomy: derived from the free-text "tools" field. A project may also set "skills": [...] to override.
 const SK=[["db","SQL",/\bSQL\b|DuckDB|SQLite|PostgreSQL|BigQuery|dbt/i],["db","DuckDB",/DuckDB/i],["db","SQLite",/SQLite/i],["db","PostgreSQL",/PostgreSQL/i],["db","BigQuery",/BigQuery/i],["db","dbt",/\bdbt/i],
 ["py","Python",/Python/i],["py","pandas",/pandas/i],["py","NumPy",/NumPy/i],["py","Polars",/Polars/i],["py","SciPy",/SciPy/i],["py","statsmodels",/statsmodels/i],["py","scikit-learn",/scikit-learn/i],["py","Plotly",/plotly/i],["py","matplotlib",/matplotlib/i],["py","Jupyter",/Jupyter/i],["py","pytest",/pytest/i],

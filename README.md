@@ -41,15 +41,15 @@ Link bisa dibagikan langsung dengan filter skill, misalnya `https://bagusbernadi
 | 03 | Yield, Rework & Defect Tracking System | [`Project-3-Yield-Rework-Defect-Tracking`](https://github.com/bagusbernadi/Project-3-Yield-Rework-Defect-Tracking) | design |
 | 04 | Before–After Defect Reduction (QCC Insulation Damage) | [`Project-4-Insulation-Damage-Reduction`](https://github.com/bagusbernadi/Project-4-Insulation-Damage-Reduction) | design |
 | 05 | Sensor Time-Series Anomaly Detection | [`Project-5-Sensor-Anomaly-Detection`](https://github.com/bagusbernadi/Project-5-Sensor-Anomaly-Detection) | planned |
-| 06 | Energy Consumption Dashboard | [`Project-6-Energy-Consumption-Dashboard`](https://github.com/bagusbernadi/Project-6-Energy-Consumption-Dashboard) | planned |
+| 06 | Energy Consumption Dashboard | [`Project-6-Energy-Consumption-Dashboard`](https://github.com/bagusbernadi/Project-6-Energy-Consumption-Dashboard) | design |
 | 07 | NG Sampling vs ICT | [`Project-7-NG-Sampling-vs-ICT`](https://github.com/bagusbernadi/Project-7-NG-Sampling-vs-ICT) | planned |
-| 08 | Property Price Analysis | [`Project-8-Property-Price-Analysis`](https://github.com/bagusbernadi/Project-8-Property-Price-Analysis) | planned |
+| 08 | Property Price Analysis | [`Project-8-Property-Price-Analysis`](https://github.com/bagusbernadi/Project-8-Property-Price-Analysis) | design |
 | 09 | Sales & Customer Dashboard | [`Project-9-Sales-Customer-Dashboard`](https://github.com/bagusbernadi/Project-9-Sales-Customer-Dashboard) | in-progress |
 | 10 | Cycle Time & Bottleneck Analysis | [`Project-10-Cycle-Time-Bottleneck-Analysis`](https://github.com/bagusbernadi/Project-10-Cycle-Time-Bottleneck-Analysis) | planned |
-| 11 | A/B Test Analysis | [`Project-11-AB-Test-Analysis`](https://github.com/bagusbernadi/Project-11-AB-Test-Analysis) | planned |
-| 12 | Process Comparison Analysis | [`Project-12-Process-Comparison-Analysis`](https://github.com/bagusbernadi/Project-12-Process-Comparison-Analysis) | planned |
-| 13 | SpaceX Falcon 9 Landing Analysis | [`Project-13-SpaceX-Falcon9-Landing-Analysis`](https://github.com/bagusbernadi/Project-13-SpaceX-Falcon9-Landing-Analysis) | planned |
-| 14 | Social Media Performance Analytics | [`Project-14-Social-Media-Performance-Analytics`](https://github.com/bagusbernadi/Project-14-Social-Media-Performance-Analytics) | planned |
+| 11 | A/B Test Analysis | [`Project-11-AB-Test-Analysis`](https://github.com/bagusbernadi/Project-11-AB-Test-Analysis) | design |
+| 12 | Process Comparison Analysis | [`Project-12-Process-Comparison-Analysis`](https://github.com/bagusbernadi/Project-12-Process-Comparison-Analysis) | design |
+| 13 | SpaceX Falcon 9 Landing Analysis | [`Project-13-SpaceX-Falcon9-Landing-Analysis`](https://github.com/bagusbernadi/Project-13-SpaceX-Falcon9-Landing-Analysis) | design |
+| 14 | Social Media Performance Analytics | [`Project-14-Social-Media-Performance-Analytics`](https://github.com/bagusbernadi/Project-14-Social-Media-Performance-Analytics) | design |
 | 15 | SPC Control Chart & Capability Dashboard | [`Project-15-SPC-Control-Chart-Dashboard`](https://github.com/bagusbernadi/Project-15-SPC-Control-Chart-Dashboard) | planned |
 | 16 | Learning Curve Analysis | [`Project-16-Learning-Curve-Analysis`](https://github.com/bagusbernadi/Project-16-Learning-Curve-Analysis) | planned |
 | 17 | Supplier Quality Scorecard | [`Project-17-Supplier-Quality-Scorecard`](https://github.com/bagusbernadi/Project-17-Supplier-Quality-Scorecard) | planned |
