@@ -50,10 +50,10 @@ Link bisa dibagikan langsung dengan filter skill, misalnya `https://bagusbernadi
 | 12 | Process Comparison Analysis | [`Project-12-Process-Comparison-Analysis`](https://github.com/bagusbernadi/Project-12-Process-Comparison-Analysis) | design |
 | 13 | SpaceX Falcon 9 Landing Analysis | [`Project-13-SpaceX-Falcon9-Landing-Analysis`](https://github.com/bagusbernadi/Project-13-SpaceX-Falcon9-Landing-Analysis) | design |
 | 14 | Social Media Performance Analytics | [`Project-14-Social-Media-Performance-Analytics`](https://github.com/bagusbernadi/Project-14-Social-Media-Performance-Analytics) | design |
-| 15 | SPC Control Chart & Capability Dashboard | [`Project-15-SPC-Control-Chart-Dashboard`](https://github.com/bagusbernadi/Project-15-SPC-Control-Chart-Dashboard) | planned |
-| 16 | Learning Curve Analysis | [`Project-16-Learning-Curve-Analysis`](https://github.com/bagusbernadi/Project-16-Learning-Curve-Analysis) | planned |
-| 17 | Supplier Quality Scorecard | [`Project-17-Supplier-Quality-Scorecard`](https://github.com/bagusbernadi/Project-17-Supplier-Quality-Scorecard) | planned |
-| 18 | LLM-based Rework/Defect Note Classifier | [`Project-18-LLM-Defect-Note-Classifier`](https://github.com/bagusbernadi/Project-18-LLM-Defect-Note-Classifier) | planned |
+| 15 | SPC Control Chart & Capability Dashboard | [`Project-15-SPC-Control-Chart-Dashboard`](https://github.com/bagusbernadi/Project-15-SPC-Control-Chart-Dashboard) | design |
+| 16 | Learning Curve Analysis | [`Project-16-Learning-Curve-Analysis`](https://github.com/bagusbernadi/Project-16-Learning-Curve-Analysis) | design |
+| 17 | Supplier Quality Scorecard | [`Project-17-Supplier-Quality-Scorecard`](https://github.com/bagusbernadi/Project-17-Supplier-Quality-Scorecard) | design |
+| 18 | LLM-based Rework/Defect Note Classifier | [`Project-18-LLM-Defect-Note-Classifier`](https://github.com/bagusbernadi/Project-18-LLM-Defect-Note-Classifier) | design |
 | 19 | Data Quality Audit & Anti-Bypass Template | [`Project-19-Data-Quality-Audit`](https://github.com/bagusbernadi/Project-19-Data-Quality-Audit) | planned |
 | 20 | Push Test Data Pipeline + Dashboard | [`Project-20-Push-Test-Data-Pipeline`](https://github.com/bagusbernadi/Project-20-Push-Test-Data-Pipeline) | planned |
 | 21 | Natural Language to SQL Analytics Assistant | [`Project-21-NL-to-SQL-Analytics-Assistant`](https://github.com/bagusbernadi/Project-21-NL-to-SQL-Analytics-Assistant) | planned |
