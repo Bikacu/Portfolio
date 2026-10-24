@@ -64,7 +64,7 @@ Link bisa dibagikan langsung dengan filter skill, misalnya `https://bagusbernadi
 | 26 | Spec Compliance Extraction | [`Project-26-Spec-Compliance-Extraction`](https://github.com/bagusbernadi/Project-26-Spec-Compliance-Extraction) | design |
 | 27 | Analytics Engineering Mini-Warehouse | [`Project-27-Analytics-Engineering-Mini-Warehouse`](https://github.com/bagusbernadi/Project-27-Analytics-Engineering-Mini-Warehouse) | design |
 | 28 | Predictive Maintenance Failure Analysis | [`Project-28-Predictive-Maintenance-Analysis`](https://github.com/bagusbernadi/Project-28-Predictive-Maintenance-Analysis) | design |
-| 29 | Root Cause Analysis Statistics | [`Project-29-Root-Cause-Analysis-Statistics`](https://github.com/bagusbernadi/Project-29-Root-Cause-Analysis-Statistics) | design |
+| 29 | Root Cause Analysis Statistics | [`Project-29-Root-Cause-Analysis-Statistics`](https://github.com/bagusbernadi/Project-29-Root-Cause-Analysis-Statistics) | planned |
 | 30 | Production Data Entry App + Dashboard | [`Project-30-Production-Data-Entry-App`](https://github.com/bagusbernadi/Project-30-Production-Data-Entry-App) | planned |
 | 31 | Job Market Scraping & Skill Demand Analysis | [`Project-31-Job-Market-Skill-Demand-Analysis`](https://github.com/bagusbernadi/Project-31-Job-Market-Skill-Demand-Analysis) | planned |
 | 32 | AD Applicability Checker | [`Project-32-AD-Applicability-Checker`](https://github.com/bagusbernadi/Project-32-AD-Applicability-Checker) | planned |
