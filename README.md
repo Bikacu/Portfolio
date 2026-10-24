@@ -65,11 +65,11 @@ Link bisa dibagikan langsung dengan filter skill, misalnya `https://bagusbernadi
 | 27 | Analytics Engineering Mini-Warehouse | [`Project-27-Analytics-Engineering-Mini-Warehouse`](https://github.com/bagusbernadi/Project-27-Analytics-Engineering-Mini-Warehouse) | design |
 | 28 | Predictive Maintenance Failure Analysis | [`Project-28-Predictive-Maintenance-Analysis`](https://github.com/bagusbernadi/Project-28-Predictive-Maintenance-Analysis) | design |
 | 29 | Root Cause Analysis Statistics | [`Project-29-Root-Cause-Analysis-Statistics`](https://github.com/bagusbernadi/Project-29-Root-Cause-Analysis-Statistics) | planned |
-| 30 | Production Data Entry App + Dashboard | [`Project-30-Production-Data-Entry-App`](https://github.com/bagusbernadi/Project-30-Production-Data-Entry-App) | planned |
-| 31 | Job Market Scraping & Skill Demand Analysis | [`Project-31-Job-Market-Skill-Demand-Analysis`](https://github.com/bagusbernadi/Project-31-Job-Market-Skill-Demand-Analysis) | planned |
-| 32 | AD Applicability Checker | [`Project-32-AD-Applicability-Checker`](https://github.com/bagusbernadi/Project-32-AD-Applicability-Checker) | planned |
-| 33 | Automated ETL: Excel Log → SQL Database | [`Project-33-Automated-Excel-to-SQL-ETL`](https://github.com/bagusbernadi/Project-33-Automated-Excel-to-SQL-ETL) | planned |
-| 34 | Customer Behavioral Segmentation | [`Project-34-Customer-Behavioral-Segmentation`](https://github.com/bagusbernadi/Project-34-Customer-Behavioral-Segmentation) | planned |
+| 30 | Production Data Entry App + Dashboard | [`Project-30-Production-Data-Entry-App`](https://github.com/bagusbernadi/Project-30-Production-Data-Entry-App) | design |
+| 31 | Job Market Scraping & Skill Demand Analysis | [`Project-31-Job-Market-Skill-Demand-Analysis`](https://github.com/bagusbernadi/Project-31-Job-Market-Skill-Demand-Analysis) | design |
+| 32 | AD Applicability Checker | [`Project-32-AD-Applicability-Checker`](https://github.com/bagusbernadi/Project-32-AD-Applicability-Checker) | design |
+| 33 | Automated ETL: Excel Log → SQL Database | [`Project-33-Automated-Excel-to-SQL-ETL`](https://github.com/bagusbernadi/Project-33-Automated-Excel-to-SQL-ETL) | design |
+| 34 | Customer Behavioral Segmentation | [`Project-34-Customer-Behavioral-Segmentation`](https://github.com/bagusbernadi/Project-34-Customer-Behavioral-Segmentation) | design |
 
 
 ### Aktifkan GitHub Pages
